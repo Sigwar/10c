@@ -1,28 +1,49 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="app"
+       id="app">
+
+    <div class="app__container">
+      <c-title title="Your account" />
+
+      <c-wrapper>
+        <c-left-box />
+        <c-right-box />
+      </c-wrapper>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import cWrapper  from './components/wrapper/wrapper.component.vue';
+import cLeftBox  from './components/leftBox/leftBox.component.vue';
+import cRightBox from './components/rightBox/rightBox.component.vue';
+import cTitle    from './components/title/title.component.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    cTitle,
+    cLeftBox,
+    cWrapper,
+    cRightBox,
+  },
+};
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+@import 'assets/style/main';
+
+.app {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 </style>

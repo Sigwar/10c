@@ -1,0 +1,36 @@
+@import './variables';
+@import './icons';
+
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background);
+  background-image: url('~@/assets/icons/abstract/abstract.svg');
+  background-size: 48rem;
+  background-repeat: no-repeat;
+}
+
+html {
+  @media screen and (min-width: 1367px) {
+    font-size: var(--base);
+  }
+
+  @media screen and (max-width: 1366px) and (min-width: 993px) {
+    font-size: var(--desktop-view);
+  }
+
+  @media screen and (max-width: 992px) and (min-width: 641px) {
+    font-size: var(--tablet-view);
+  }
+
+  @media screen and (max-width: 640px) and (min-width: 426px) {
+    font-size: var(--mobile-view);
+  }
+
+  @media screen and (max-width: 425px) {
+    font-size: var(--mobile-view);
+  }
+
+}

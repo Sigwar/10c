@@ -1,0 +1,13 @@
+.icon {
+  &-abstract {
+    background: url('~@/assets/icons/abstract/abstract.svg') no-repeat center;
+  }
+
+  &-lines {
+    background: url('~@/assets/icons/lines/lines.svg') no-repeat center;
+  }
+
+  &-arrow {
+    background: url('~@/assets/icons/arrow/arrow.svg') no-repeat center;
+  }
+}

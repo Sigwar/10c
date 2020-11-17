@@ -1,0 +1,25 @@
+:root {
+  --base: .8vw;
+  --desktop-view: 1vw;
+  --tablet-view: 1.6vw;
+  --mobile-view: 2vw;
+
+  --primary-color: #652AE6;
+  --primary-color-dark: #3c266c;
+  --primary-color-light: #8658EB;
+  --secondary-color: #1BFEC0;
+
+  --background: #242424;
+  --white: #fff;
+  --gray: #F2F2F5;
+  --font: #202020;
+  --error: #EB5757;
+  --label-color: #333333;
+  --focus: #afafaf;
+
+  --light: 300;
+  --normal: 500;
+  --bold: 700;
+
+  --transition: all .25s ease-in-out;
+}
